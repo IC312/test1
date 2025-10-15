@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đáp Án Ôn Tập - Khối 8</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            border-left: 4px solid #667eea;
+            padding-left: 20px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            color: #667eea;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .question-block {
+            background: #f8f9fa;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .question-block:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+
+        .question {
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        .answer {
+            color: #28a745;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            border-left: 3px solid #28a745;
+            position: relative;
+        }
+
+        .answer-text {
+            color: #d63384;
+            font-style: italic;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .copy-btn:hover {
+            background: #764ba2;
+            transform: scale(1.05);
+        }
+
+        .copy-btn:active {
+            transform: scale(0.95);
+        }
+
+        .copied {
+            background: #28a745 !important;
+        }
+
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            font-style: italic;
+            color: #856404;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 ÔN TẬP GIỮA KỲ 1 - VIẾT LẠI CÂU</h1>
+            <p>Khối 8 - Môn Tiếng Anh</p>
+        </div>
+
+        <div class="content">
+            <!-- Section 1 -->
+            <div class="section">
+                <h2 class="section-title">1. USED TO</h2>
+                
+                <div class="question-block">
+                    <p class="question">1. Liz loved baggy clothes, but now she doesn't.</p>
+                    <div class="answer">
+                        ⇒ Liz used <span class="answer-text">to love baggy clothes.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'to love baggy clothes.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">2. My husband taught math at the college. However, he now works for that company.</p>
+                    <div class="answer">
+                        ⇒ My husband used <span class="answer-text">to teach math at the college.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'to teach math at the college.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">3. When he was younger, Tom did not drink milk but now he drinks it almost every day.</p>
+                    <div class="answer">
+                        ⇒ Tom didn't <span class="answer-text">use to drink milk.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'use to drink milk.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">4. In the past, I enjoyed fishing more.</p>
+                    <div class="answer">
+                        ⇒ I used <span class="answer-text">to enjoy fishing.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'to enjoy fishing.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">5. In the past, Tom had a bad relationship with his brother.</p>
+                    <div class="answer">
+                        ⇒ Tom used <span class="answer-text">to have a bad relationship with his brother.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'to have a bad relationship with his brother.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">6. When I was a child, we went to Boston at least once a month.</p>
+                    <div class="answer">
+                        ⇒ We used <span class="answer-text">to go to Boston at least once a month.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'to go to Boston at least once a month.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">7. I'm surprised to see you smoking. You didn't smoke when we worked together.</p>
+                    <div class="answer">
+                        ⇒ You didn't <span class="answer-text">use to smoke.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'use to smoke.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">8. In 2005, Tom and Mary lived in the same building but now they don't.</p>
+                    <div class="answer">
+                        ⇒ Tom and Mary used <span class="answer-text">to live in the same building.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'to live in the same building.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">9. Tom was a better chess player in the past than he is now.</p>
+                    <div class="answer">
+                        ⇒ Tom used to <span class="answer-text">be a better chess player.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'be a better chess player.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">10. She hated hip hop music, but she loves it now.</p>
+                    <div class="answer">
+                        ⇒ She didn't use <span class="answer-text">to like hip hop music.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'to like hip hop music.')">Copy</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="section">
+                <h2 class="section-title">2. PAST SIMPLE AND PAST CONTINUOUS</h2>
+                
+                <div class="question-block">
+                    <p class="question">1. The girl was running through the forest when she slipped over.</p>
+                    <div class="answer">
+                        ⇒ The girl slipped <span class="answer-text">over while she was running through the forest.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'over while she was running through the forest.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">2. While I was waiting at the bus stop, I saw an accident.</p>
+                    <div class="answer">
+                        ⇒ When <span class="answer-text">I saw an accident, I was waiting at the bus stop.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'I saw an accident, I was waiting at the bus stop.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">3. I was relaxing in the sun when a cloud appeared in the sky.</p>
+                    <div class="answer">
+                        ⇒ A cloud <span class="answer-text">appeared in the sky while I was relaxing in the sun.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'appeared in the sky while I was relaxing in the sun.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">4. They were competing in the race when it suddenly started to rain.</p>
+                    <div class="answer">
+                        ⇒ It suddenly <span class="answer-text">started to rain while they were competing in the race.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'started to rain while they were competing in the race.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">5. She was posting photos when her phone ran out of battery.</p>
+                    <div class="answer">
+                        ⇒ Her phone <span class="answer-text">ran out of battery while she was posting photos.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'ran out of battery while she was posting photos.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">6. We celebrated our team's victory while the band was playing music.</p>
+                    <div class="answer">
+                        ⇒ The band <span class="answer-text">was playing music when we celebrated our team's victory.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'was playing music when we celebrated our team\'s victory.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">7. She solved the puzzle while her brother was watching TV.</p>
+                    <div class="answer">
+                        ⇒ Her brother <span class="answer-text">was watching TV when she solved the puzzle.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'was watching TV when she solved the puzzle.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">8. Mike saw the money on the ground while he was walking to school.</p>
+                    <div class="answer">
+                        ⇒ He was <span class="answer-text">walking to school when he saw the money on the ground.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'walking to school when he saw the money on the ground.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">9. While everyone was arguing, I realised it was a good time to go.</p>
+                    <div class="answer">
+                        ⇒ When <span class="answer-text">I realised it was a good time to go, everyone was arguing.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'I realised it was a good time to go, everyone was arguing.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">10. While she was leaving the party, she finally remembered his name.</p>
+                    <div class="answer">
+                        ⇒ When <span class="answer-text">she finally remembered his name, she was leaving the party.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'she finally remembered his name, she was leaving the party.')">Copy</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3 -->
+            <div class="section">
+                <h2 class="section-title">3. PAST SIMPLE AND PRESENT PERFECT</h2>
+                
+                <div class="note">
+                    💡 Công thức: S + started/began + to V/Ving → S + have/has + V3/ed
+                </div>
+
+                <div class="question-block">
+                    <p class="question">1. I began to collect stamps five years ago.</p>
+                    <div class="answer">
+                        ⇒ I have <span class="answer-text">collected stamps for five years.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'collected stamps for five years.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">2. He started to learn English three years ago.</p>
+                    <div class="answer">
+                        ⇒ He has <span class="answer-text">learned English for three years.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'learned English for three years.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">3. They began playing football when they were ten.</p>
+                    <div class="answer">
+                        ⇒ They have <span class="answer-text">played football since they were ten.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'played football since they were ten.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">4. She started to work here in 2020.</p>
+                    <div class="answer">
+                        ⇒ She has <span class="answer-text">worked here since 2020.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'worked here since 2020.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">5. We started watching that TV series last month.</p>
+                    <div class="answer">
+                        ⇒ We have <span class="answer-text">watched that TV series since last month.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'watched that TV series since last month.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="note">
+                    💡 Công thức: This is the first time + S + have + V3/ed → S + have/has + never/not + V3/ed ... before.
+                </div>
+
+                <div class="question-block">
+                    <p class="question">6. This is the first time I have ridden an alpaca.</p>
+                    <div class="answer">
+                        ⇒ I have <span class="answer-text">never ridden an alpaca before.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'never ridden an alpaca before.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">7. It's the first time she has visited a floating market.</p>
+                    <div class="answer">
+                        ⇒ She has <span class="answer-text">never visited a floating market before.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'never visited a floating market before.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">8. This is the first time he has played the flute.</p>
+                    <div class="answer">
+                        ⇒ He has <span class="answer-text">never played the flute before.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'never played the flute before.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="note">
+                    💡 Công thức: S + last + V2/ed ... in/on/at ...
+                </div>
+
+                <div class="question-block">
+                    <p class="question">9. I haven't painted with pastels since 2008</p>
+                    <div class="answer">
+                        ⇒ I last <span class="answer-text">painted with pastels in 2008.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'painted with pastels in 2008.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">10. She has not seen lotus flowers bloom since 2024</p>
+                    <div class="answer">
+                        ⇒ She last <span class="answer-text">saw lotus flowers bloom in 2024.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'saw lotus flowers bloom in 2024.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="note">
+                    💡 Công thức: S + have/has + not + V3/ed ... + since/for ...
+                </div>
+
+                <div class="question-block">
+                    <p class="question">11. They last baked a cake two months ago.</p>
+                    <div class="answer">
+                        ⇒ They haven't <span class="answer-text">baked a cake since two months ago.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'baked a cake since two months ago.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">12. I arrived in London last week and I'm still here.</p>
+                    <div class="answer">
+                        ⇒ I have <span class="answer-text">been in London for a week.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'been in London for a week.')">Copy</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 4 -->
+            <div class="section">
+                <h2 class="section-title">4. SUGGESTION</h2>
+                
+                <div class="question-block">
+                    <p class="question">1. Why don't we go to the super market next week?</p>
+                    <div class="answer">
+                        ⇒ How about <span class="answer-text">going to the supermarket next week?</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'going to the supermarket next week?')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">2. You ought to buy some souvenirs before we leave.</p>
+                    <div class="answer">
+                        ⇒ Don't forget <span class="answer-text">to buy some souvenirs before we leave.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'to buy some souvenirs before we leave.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">3. Shall we go cycling around West Lake this afternoon?</p>
+                    <div class="answer">
+                        ⇒ Would you like <span class="answer-text">to go cycling around West Lake this afternoon?</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'to go cycling around West Lake this afternoon?')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">4. Let's make some recycled decorations for our classroom.</p>
+                    <div class="answer">
+                        ⇒ How about <span class="answer-text">making some recycled decorations for our classroom?</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'making some recycled decorations for our classroom?')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">5. How about raising money for stray animals?</p>
+                    <div class="answer">
+                        ⇒ I think <span class="answer-text">we should raise money for stray animals.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'we should raise money for stray animals.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">6. Why don't we watch a documentary instead of an action movie tonight?</p>
+                    <div class="answer">
+                        ⇒ How about <span class="answer-text">watching a documentary instead of an action movie tonight?</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'watching a documentary instead of an action movie tonight?')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">7. Shall we bake some cookies for the teacher's birthday?</p>
+                    <div class="answer">
+                        ⇒ Let's <span class="answer-text">bake some cookies for the teacher's birthday.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'bake some cookies for the teacher\'s birthday.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">8. How about booking a night train to Sapa for our holiday?</p>
+                    <div class="answer">
+                        ⇒ Would you like <span class="answer-text">to book a night train to Sapa for our holiday?</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'to book a night train to Sapa for our holiday?')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">9. I think we should review the lesson together.</p>
+                    <div class="answer">
+                        ⇒ Let's <span class="answer-text">review the lesson together.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'review the lesson together.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">10. Would you like to join us for a project discussion?</p>
+                    <div class="answer">
+                        ⇒ Shall we <span class="answer-text">join the project discussion?</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'join the project discussion?')">Copy</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 5 -->
+            <div class="section">
+                <h2 class="section-title">5. CAN/COULD/BE ABLE TO/BE CAPABLE OF</h2>
+                
+                <div class="question-block">
+                    <p class="question">1. My best friend had the ability to play the flute when she was five.</p>
+                    <div class="answer">
+                        ⇒ My best friend could <span class="answer-text">play the flute when she was five.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'play the flute when she was five.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">2. The new student has the ability to design beautiful posters.</p>
+                    <div class="answer">
+                        ⇒ The new student is <span class="answer-text">capable of designing beautiful posters.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'capable of designing beautiful posters.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">3. I didn't have the ability to swim when I was a child.</p>
+                    <div class="answer">
+                        ⇒ I couldn't <span class="answer-text">swim when I was a child.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'swim when I was a child.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">4. Robots have the ability to perform many tasks at the same time.</p>
+                    <div class="answer">
+                        ⇒ Robots are capable <span class="answer-text">of performing many tasks at the same time.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'of performing many tasks at the same time.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">5. She is capable of solving very difficult math problems.</p>
+                    <div class="answer">
+                        ⇒ She can <span class="answer-text">solve very difficult math problems.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'solve very difficult math problems.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">6. She could play piano when she was seven years old.</p>
+                    <div class="answer">
+                        ⇒ She was able <span class="answer-text">to play the piano when she was seven years old.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'to play the piano when she was seven years old.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">7. The robot isn't capable of moving on rough surfaces.</p>
+                    <div class="answer">
+                        ⇒ The robot can't <span class="answer-text">move on rough surfaces.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'move on rough surfaces.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">8. He knows how to speak three languages.</p>
+                    <div class="answer">
+                        ⇒ He can <span class="answer-text">speak three languages.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'speak three languages.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">9. My wife isn't capable of designing pattern clothes.</p>
+                    <div class="answer">
+                        ⇒ My wife is not <span class="answer-text">able to design patterned clothes.</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'able to design patterned clothes.')">Copy</button>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <p class="question">10. Can you read English book?</p>
+                    <div class="answer">
+                        ⇒ Are you capable <span class="answer-text">of reading English books?</span>
+                        <button class="copy-btn" onclick="copyAnswer(this, 'of reading English books?')">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyAnswer(button, text) {
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = button.textContent;
+                button.textContent = '✓ Copied!';
+                button.classList.add('copied');
+                
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy:', err);
+                alert('Không thể copy. Vui lòng thử lại!');
+            });
+        }
+    </script>
+</body>
+</html>
